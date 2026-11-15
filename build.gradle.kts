@@ -35,7 +35,7 @@ dependencies {
     implementation(libs.flyway.database.postgresql)
     runtimeOnly(libs.postgresql)
 
-    // Secrets: database credentials are read from HashiCorp Vault (spring.config.import=vault://)
+    // Secrets: database credentials are read from HashiCorp Vault (spring.com.chaperonesolutions.ameda.shared.config.import=vault://)
     implementation(libs.spring.cloud.starter.vault.config)
 
     // Security: inbound JWT resource server
@@ -50,7 +50,7 @@ dependencies {
     implementation(libs.spring.boot.starter.opentelemetry)
     runtimeOnly(libs.micrometer.registry.prometheus)
 
-    // Boilerplate reduction (compile time only). Rules for allowed annotations: lombok.config
+    // Boilerplate reduction (compile time only). Rules for allowed annotations: lombok.com.chaperonesolutions.ameda.shared.config
     compileOnly(libs.lombok)
     annotationProcessor(libs.lombok)
 
@@ -98,7 +98,7 @@ tasks.bootJar {
     archiveFileName = "app.jar"
 }
 
-// LOCAL ONLY: feed the app's own variables from .env (shared with docker compose) into bootRun,
+// LOCAL ONLY: feed the app's own variables from .env (com.chaperonesolutions.ameda.shared with docker compose) into bootRun,
 // so the app and Vault always agree on the AppRole ids. Values set here override stale OS variables.
 // Allowlist: the app never receives the superuser or schema-owner passwords.
 tasks.named<org.springframework.boot.gradle.tasks.run.BootRun>("bootRun") {

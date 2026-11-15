@@ -1,0 +1,382 @@
+2026-11-15T12:14:19.952+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 12356 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:14:20.044+03:00 DEBUG 12356 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:14:20.049+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:14:20.260+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:14:20.261+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:14:20.263+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:14:26.249+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:14:26.255+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T12:14:26.949+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 664 ms. Found 1 JPA repository interface.
+2026-11-15T12:14:27.014+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:14:27.019+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-15T12:14:27.126+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.persistence.CustomerJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:14:27.126+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 0 Redis repository interfaces.
+2026-11-15T12:14:28.750+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b80b8b73-2539-3cdb-95d7-ecec040c1663
+2026-11-15T12:14:32.374+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T12:14:32.429+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:14:32.430+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:14:32.883+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 12614 ms
+2026-11-15T12:14:35.390+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=Hexagonal-Architecture}
+2026-11-15T12:14:42.830+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/mydb (PostgreSQL 17.12)
+2026-11-15T12:14:43.355+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "demo"."flyway_schema_history" does not exist yet
+2026-11-15T12:14:43.364+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : Successfully validated 0 migrations (execution time 00:00.055s)
+2026-11-15T12:14:43.365+03:00  WARN 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : No migrations found. Are your locations set up correctly?
+2026-11-15T12:14:43.576+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "demo"."flyway_schema_history" ...
+2026-11-15T12:14:44.644+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Current version of schema "demo": << Empty Schema >>
+2026-11-15T12:14:44.657+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Schema "demo" is up to date. No migration necessary.
+2026-11-15T12:14:46.193+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T12:14:47.163+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-15T12:14:49.097+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T12:14:49.256+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Starting...
+2026-11-15T12:14:49.395+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : Hexagonal-Architecture-hikari - Added connection org.postgresql.jdbc.PgConnection@697c9218
+2026-11-15T12:14:49.415+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Start completed.
+2026-11-15T12:14:49.684+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: mydb/demo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T12:14:54.540+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T12:14:54.550+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-11-15T12:14:55.053+03:00 ERROR 12356 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [customer]
+2026-11-15T12:14:55.054+03:00  WARN 12356 --- [Hexagonal-Architecture] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [customer]
+2026-11-15T12:14:55.055+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown initiated...
+2026-11-15T12:14:55.071+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown completed.
+2026-11-15T12:14:55.124+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.logs.SdkLoggerProvider           : Calling shutdown() multiple times.
+2026-11-15T12:14:55.124+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.trace.SdkTracerProvider          : Calling shutdown() multiple times.
+2026-11-15T12:14:55.406+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-15T12:14:55.470+03:00  INFO 12356 --- [Hexagonal-Architecture] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-15T12:14:55.542+03:00 ERROR 12356 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [customer]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621)
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:131)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:433)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1353)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at com.chaperonesolutions.ameda.HexagonalArchApplication.main(HexagonalArchApplication.java:10)
+Caused by: jakarta.persistence.PersistenceException: Unable to build Hibernate SessionFactory  [persistence unit: default] ; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [customer]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:448)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:411)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:419)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811)
+	... 15 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema validation: missing table [customer]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:128)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:75)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:278)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$1(SchemaManagementToolCoordinator.java:101)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:100)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:35)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:33)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:327)
+	at org.hibernate.internal.SessionFactoryRegistry.instantiateSessionFactory(SessionFactoryRegistry.java:64)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:458)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1452)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:93)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:443)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:436)
+	... 19 common frames omitted
+
+2026-11-15T12:19:27.790+03:00  INFO 2228 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 2228 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:19:27.802+03:00 DEBUG 2228 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:19:27.813+03:00  INFO 2228 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:19:27.982+03:00  INFO 2228 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:19:27.989+03:00  INFO 2228 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:19:27.990+03:00  INFO 2228 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:20:44.058+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 968 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:20:44.065+03:00 DEBUG 968 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:20:44.067+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:20:44.153+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:20:44.158+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:20:44.159+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:20:47.289+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:20:47.294+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T12:20:47.648+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 332 ms. Found 1 JPA repository interface.
+2026-11-15T12:20:47.679+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:20:47.679+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-15T12:20:47.728+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.persistence.CustomerJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:20:47.728+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2026-11-15T12:20:48.367+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=b80b8b73-2539-3cdb-95d7-ecec040c1663
+2026-11-15T12:20:50.647+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T12:20:50.668+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:20:50.668+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:20:50.843+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6679 ms
+2026-11-15T12:20:52.212+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=Hexagonal-Architecture}
+2026-11-15T12:20:55.422+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/mydb (PostgreSQL 17.12)
+2026-11-15T12:20:55.685+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.088s)
+2026-11-15T12:20:55.789+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Current version of schema "demo": << Empty Schema >>
+2026-11-15T12:20:55.841+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Migrating schema "demo" to version "1 - create customer"
+2026-11-15T12:20:56.088+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Migrating schema "demo" to version "2 - alter customer"
+2026-11-15T12:20:56.163+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Migrating schema "demo" to version "3 - create account"
+2026-11-15T12:20:56.273+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "demo", now at version v3 (execution time 00:00.269s)
+2026-11-15T12:20:56.719+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T12:20:56.918+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-15T12:20:58.099+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T12:20:58.177+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Starting...
+2026-11-15T12:20:58.256+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : Hexagonal-Architecture-hikari - Added connection org.postgresql.jdbc.PgConnection@1ccab629
+2026-11-15T12:20:58.260+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Start completed.
+2026-11-15T12:20:58.588+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: mydb/demo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T12:21:01.839+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T12:21:01.851+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-11-15T12:21:02.093+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:21:02.278+03:00  WARN 968 --- [Hexagonal-Architecture] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\api\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\application\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.chaperonesolutions.ameda.account.domain.port.AccountRepositoryPort' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-11-15T12:21:02.279+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:21:02.291+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown initiated...
+2026-11-15T12:21:02.296+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown completed.
+2026-11-15T12:21:02.339+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.logs.SdkLoggerProvider           : Calling shutdown() multiple times.
+2026-11-15T12:21:02.340+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.trace.SdkTracerProvider          : Calling shutdown() multiple times.
+2026-11-15T12:21:02.449+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-15T12:21:02.536+03:00  INFO 968 --- [Hexagonal-Architecture] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-15T12:21:02.628+03:00 ERROR 968 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.chaperonesolutions.ameda.account.application.AccountService required a bean of type 'com.chaperonesolutions.ameda.account.domain.port.AccountRepositoryPort' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.chaperonesolutions.ameda.account.domain.port.AccountRepositoryPort' in your configuration.
+
+2026-11-15T12:32:30.370+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 9884 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:32:30.379+03:00 DEBUG 9884 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:32:30.381+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:32:30.514+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:32:30.518+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:32:30.519+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:32:34.458+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:32:34.465+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T12:32:34.889+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 389 ms. Found 2 JPA repository interfaces.
+2026-11-15T12:32:34.929+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:32:34.929+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-15T12:32:34.983+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.account.infrastructure.persistence.AccountJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:32:34.984+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.persistence.CustomerJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:32:34.984+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2026-11-15T12:32:35.589+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ca53f3ad-0969-372e-9aee-3e0964e3aead
+2026-11-15T12:32:38.218+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T12:32:38.268+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:32:38.270+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:32:38.677+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 8150 ms
+2026-11-15T12:32:40.178+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=Hexagonal-Architecture}
+2026-11-15T12:32:42.643+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/mydb (PostgreSQL 17.12)
+2026-11-15T12:32:42.856+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.070s)
+2026-11-15T12:32:42.932+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Current version of schema "demo": 3
+2026-11-15T12:32:42.938+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Schema "demo" is up to date. No migration necessary.
+2026-11-15T12:32:43.289+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T12:32:43.488+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-15T12:32:44.782+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T12:32:44.848+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Starting...
+2026-11-15T12:32:44.923+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : Hexagonal-Architecture-hikari - Added connection org.postgresql.jdbc.PgConnection@ae54cb3
+2026-11-15T12:32:44.926+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Start completed.
+2026-11-15T12:32:45.104+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: mydb/demo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T12:32:47.236+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T12:32:47.256+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-11-15T12:32:47.430+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:32:47.759+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-15T12:32:48.529+03:00  WARN 9884 --- [Hexagonal-Architecture] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\api\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\application\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customerModuleAdapter' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\infrastructure\customer\CustomerModuleAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customerService' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\customer\application\CustomerService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'jsonPlaceholderAdapter' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\customer\infrastructure\client\jsonplaceholder\JsonPlaceholderAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'jsonplaceholder#com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.JsonPlaceHolderApi': Instantiation of supplied bean failed
+2026-11-15T12:32:48.529+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:32:48.529+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown initiated...
+2026-11-15T12:32:48.538+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown completed.
+2026-11-15T12:32:48.570+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.logs.SdkLoggerProvider           : Calling shutdown() multiple times.
+2026-11-15T12:32:48.570+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.trace.SdkTracerProvider          : Calling shutdown() multiple times.
+2026-11-15T12:32:48.613+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-15T12:32:48.659+03:00  INFO 9884 --- [Hexagonal-Architecture] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-15T12:32:48.707+03:00 ERROR 9884 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method jsonPlaceHolderConfigurer in com.chaperonesolutions.ameda.shared.config.HttpClientConfig required a bean of type 'com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.JsonPlaceholderErrorHandler' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.JsonPlaceholderErrorHandler' in your configuration.
+
+2026-11-15T12:38:47.409+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 13700 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:38:47.418+03:00 DEBUG 13700 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:38:47.420+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:38:47.582+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:38:47.586+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:38:47.590+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:38:53.943+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:38:53.948+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T12:38:54.379+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 411 ms. Found 2 JPA repository interfaces.
+2026-11-15T12:38:54.413+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:38:54.418+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-15T12:38:54.482+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.account.infrastructure.persistence.AccountJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:38:54.484+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.persistence.CustomerJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:38:54.485+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 0 Redis repository interfaces.
+2026-11-15T12:38:55.078+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39a48d91-a41f-306b-a8ed-225e32d6941f
+2026-11-15T12:38:56.709+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T12:38:56.737+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:38:56.738+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:38:57.049+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 9446 ms
+2026-11-15T12:38:58.482+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=Hexagonal-Architecture}
+2026-11-15T12:39:01.166+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/mydb (PostgreSQL 17.12)
+2026-11-15T12:39:01.394+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.100s)
+2026-11-15T12:39:01.480+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Current version of schema "demo": 3
+2026-11-15T12:39:01.488+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Schema "demo" is up to date. No migration necessary.
+2026-11-15T12:39:01.798+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T12:39:01.999+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-15T12:39:03.229+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T12:39:03.312+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Starting...
+2026-11-15T12:39:03.385+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : Hexagonal-Architecture-hikari - Added connection org.postgresql.jdbc.PgConnection@f7dc1aa
+2026-11-15T12:39:03.389+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Start completed.
+2026-11-15T12:39:03.648+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: mydb/demo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T12:39:05.878+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T12:39:05.891+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-11-15T12:39:06.200+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:39:07.549+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-15T12:39:09.078+03:00  WARN 13700 --- [Hexagonal-Architecture] [main] [                                                 ] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountController' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\api\AccountController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'accountService' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\application\AccountService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'customerModuleAdapter' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\account\infrastructure\customer\CustomerModuleAdapter.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'customerService' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\customer\application\CustomerService.class]: Unsatisfied dependency expressed through constructor parameter 1: Error creating bean with name 'jsonPlaceholderAdapter' defined in file [C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main\com\chaperonesolutions\ameda\customer\infrastructure\client\jsonplaceholder\JsonPlaceholderAdapter.class]: Advisor sorting failed with unexpected bean creation, probably due to custom use of the Ordered interface. Consider using the @Order annotation instead.
+2026-11-15T12:39:09.079+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:39:09.079+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown initiated...
+2026-11-15T12:39:09.092+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Shutdown completed.
+2026-11-15T12:39:09.119+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.logs.SdkLoggerProvider           : Calling shutdown() multiple times.
+2026-11-15T12:39:09.119+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] i.o.sdk.trace.SdkTracerProvider          : Calling shutdown() multiple times.
+2026-11-15T12:39:09.169+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-15T12:39:09.209+03:00  INFO 13700 --- [Hexagonal-Architecture] [main] [                                                 ] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-15T12:39:09.277+03:00 ERROR 13700 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'resilience4j.circuitbreaker.instances.jsonplaceholder.record-exceptions[0]' to java.lang.Class<java.lang.Throwable>:
+
+    Property: resilience4j.circuitbreaker.instances.jsonplaceholder.record-exceptions[0]
+    Value: "com.chaperonesolutions.ameda.com.chaperonesolutions.ameda.shared.error.exception.DownstreamUnavailableException"
+    Origin: class path resource [application.yml] - 169:13
+    Reason: failed to convert java.lang.String to java.lang.Class<java.lang.Throwable> (caused by java.lang.ClassNotFoundException: com.chaperonesolutions.ameda.com.chaperonesolutions.ameda.shared.error.exception.DownstreamUnavailableException)
+
+Action:
+
+Update your application's configuration
+
+2026-11-15T12:45:14.969+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Starting HexagonalArchApplication using Java 21.0.13 with PID 1896 (C:\Users\ameda\Downloads\Hexagonal-Architecture\build\classes\java\main started by ameda in C:\Users\ameda\Downloads\Hexagonal-Architecture)
+2026-11-15T12:45:14.979+03:00 DEBUG 1896 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Running with Spring Boot v4.1.2, Spring v7.0.10
+2026-11-15T12:45:14.979+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : The following 1 profile is active: "local"
+2026-11-15T12:45:15.079+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/Hexagonal-Architecture/local] not resolvable: Not found
+2026-11-15T12:45:15.081+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application/local] not resolvable: Not found
+2026-11-15T12:45:15.082+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.v.c.e.LeaseAwareVaultPropertySource  : Vault location [secret/application] not resolvable: Not found
+2026-11-15T12:45:18.168+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:45:18.172+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-15T12:45:18.509+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 322 ms. Found 2 JPA repository interfaces.
+2026-11-15T12:45:18.548+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-11-15T12:45:18.548+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-11-15T12:45:18.589+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.account.infrastructure.persistence.AccountJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:45:18.589+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.chaperonesolutions.ameda.customer.infrastructure.client.jsonplaceholder.persistence.CustomerJpaRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-11-15T12:45:18.589+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2026-11-15T12:45:19.439+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.cloud.context.scope.GenericScope     : BeanFactory id=39a48d91-a41f-306b-a8ed-225e32d6941f
+2026-11-15T12:45:21.393+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-15T12:45:21.430+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:45:21.430+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:45:21.588+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6500 ms
+2026-11-15T12:45:22.766+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] i.m.c.instrument.push.PushMeterRegistry  : Publishing metrics for OtlpMeterRegistry every 1m to http://localhost:4318/v1/metrics with resource attributes {service.name=Hexagonal-Architecture}
+2026-11-15T12:45:26.139+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5432/mydb (PostgreSQL 17.12)
+2026-11-15T12:45:26.388+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.085s)
+2026-11-15T12:45:26.459+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Current version of schema "demo": 3
+2026-11-15T12:45:26.462+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.f.core.internal.command.DbMigrate      : Schema "demo" is up to date. No migration necessary.
+2026-11-15T12:45:26.739+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-15T12:45:26.899+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-15T12:45:28.082+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-15T12:45:28.200+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Starting...
+2026-11-15T12:45:28.262+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.pool.HikariPool        : Hexagonal-Architecture-hikari - Added connection org.postgresql.jdbc.PgConnection@6b37cadf
+2026-11-15T12:45:28.266+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] com.zaxxer.hikari.HikariDataSource       : Hexagonal-Architecture-hikari - Start completed.
+2026-11-15T12:45:28.465+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/mydb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 17.12
+	Default catalog/schema: mydb/demo
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-11-15T12:45:31.123+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-15T12:45:31.138+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] org.hibernate.orm.jdbc.batch             : HHH100501: Automatic JDBC statement batching enabled (maximum batch size 50)
+2026-11-15T12:45:31.309+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-15T12:45:31.684+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-11-15T12:45:39.279+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-11-15T12:45:39.586+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-11-15T12:45:39.588+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-15T12:45:39.589+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-15T12:45:39.799+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 491 ms
+2026-11-15T12:45:39.833+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-11-15T12:45:40.059+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-11-15T12:45:40.467+03:00  INFO 1896 --- [Hexagonal-Architecture] [main] [                                                 ] c.c.ameda.HexagonalArchApplication       : Started HexagonalArchApplication in 29.329 seconds (process running for 31.438)
+2026-11-15T12:45:40.792+03:00  WARN 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-11-15T12:45:40.793+03:00  WARN 1896 --- [Hexagonal-Architecture] [main] [                                                 ] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'

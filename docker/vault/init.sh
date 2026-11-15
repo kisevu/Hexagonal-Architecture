@@ -8,7 +8,7 @@ until vault status >/dev/null 2>&1; do sleep 1; done
 
 # --- 1. Secrets ------------------------------------------------------------
 # KV v2 is mounted at secret/ in dev mode. Keys are Spring property names,
-# so Spring Cloud Vault maps them straight onto the datasource/flyway config.
+# so Spring Cloud Vault maps them straight onto the datasource/flyway com.chaperonesolutions.ameda.shared.config.
 vault kv put "secret/${APP_NAME}" \
   spring.datasource.username="${DB_APP_USER}" \
   spring.datasource.password="${DB_APP_PASSWORD}" \
@@ -35,7 +35,7 @@ vault write "auth/approle/role/${APP_NAME}" \
   secret_id_ttl=0 \
   secret_id_num_uses=0
 
-# Fixed IDs so local config is predictable. In real environments, let Vault
+# Fixed IDs so local com.chaperonesolutions.ameda.shared.config is predictable. In real environments, let Vault
 # generate them and deliver the secret_id via CI (response-wrapped).
 vault write "auth/approle/role/${APP_NAME}/role-id" role_id="${VAULT_APP_ROLE_ID}"
 vault write "auth/approle/role/${APP_NAME}/custom-secret-id" \

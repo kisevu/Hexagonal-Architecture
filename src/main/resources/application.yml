@@ -31,7 +31,7 @@ spring:
       kv:
         enabled: true
         backend: secret              # KV v2 mount
-        default-context: application # secret/application: shared by every app
+        default-context: application # secret/application: com.chaperonesolutions.ameda.shared by every app
       session:
         lifecycle:
           enabled: true              # renew the Vault token before it expires
@@ -155,7 +155,7 @@ resilience4j:
         enable-exponential-backoff: true
         exponential-backoff-multiplier: 2
         retry-exceptions:              # only transient failures; never 4xx, "not found" or rule violations
-          - com.mysample.demo.shared.error.exception.DownstreamUnavailableException
+          - com.chaperonesolutions.ameda.shared.error.exception.DownstreamUnavailableException
   circuitbreaker:
     instances:
       jsonplaceholder:
@@ -166,7 +166,7 @@ resilience4j:
         wait-duration-in-open-state: 30s
         permitted-number-of-calls-in-half-open-state: 3
         record-exceptions:             # "user not found" is an answer, not a failure of the API
-          - com.mysample.demo.shared.error.exception.DownstreamUnavailableException
+          - com.chaperonesolutions.ameda.shared.error.exception.DownstreamUnavailableException
 
 logging:
   structured:
@@ -174,7 +174,7 @@ logging:
       console: ecs            # JSON on stdout: what Filebeat / Fluent Bit / the platform collects
     ecs:
       service:
-        name: demo
+        name: Hexagonal-Architecture
   level:
-    com.mysample.demo: INFO
+    com.chaperonesolutions.ameda: INFO
 

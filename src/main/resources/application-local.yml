@@ -20,18 +20,18 @@ logging:
       console: ecs            # JSON on stdout: what Filebeat / Fluent Bit / the platform collects
     ecs:
       service:
-        name: demo
+        name: Hexagonal-Architecture
   level:
     root: INFO
-    com.mysample.demo: DEBUG                                        # our own code
-    com.mysample.demo.shared.observability.HttpLoggingFilter: INFO  # request/response blocks
+    com.chaperonesolutions.ameda: DEBUG                                        # our own code
+    com.chaperonesolutions.ameda.shared.observability.HttpLoggingFilter: INFO  # request/response blocks
     # Turn on only while investigating:
     # org.springframework.security: DEBUG                 # why a request got 401/403
     # org.springframework.security.oauth2.server.resource: DEBUG
     # org.hibernate.SQL: DEBUG                            # SQL statements
     # org.hibernate.orm.jdbc.bind: TRACE                  # SQL parameter values (contains personal data!)
   file:
-    name: logs/demo.log        # same lines as the console, also written to a file
+    name: logs/Hexagonal-Architecture.log        # same lines as the console, also written to a file
   logback:
     rollingpolicy:
       max-file-size: 10MB
